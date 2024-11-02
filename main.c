@@ -4,6 +4,12 @@
 	printf("x:%d,y:%d\ninput:%d,lastinput:%d\ngtime:%d,move:%d\n", \
 			head.x,head.y,gc,lastgc,gtime,move);
 
+#ifdef _WIN32
+    #define clear system("cls");
+#elif __linux__
+    #define clear system("clear");
+#endif
+
 void draw();
 
 int main(int argc, char *argv[]){
