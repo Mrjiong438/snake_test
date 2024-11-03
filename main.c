@@ -24,9 +24,6 @@ int main(int argc, char *argv[]){
 	int move =0;
 	srand((unsigned)time(NULL));
 	genfood();
-	//setchar(6,6,'^');
-	//setpos(&head,6,6);
-	//setpos(&tail,6,6);
 	initHeadPos(6,6,'^');
 	clear
 	logg
