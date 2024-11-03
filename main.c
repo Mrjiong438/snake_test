@@ -1,8 +1,8 @@
 #include "snake_core/snake.h"
 
 #define logg \
-	printf("x:%d,y:%d\ninput:%d,lastinput:%d\ngtime:%d,move:%d\n", \
-			head.x,head.y,gc,lastgc,gtime,move);
+	printf("head x:%d,y:%d\ntail x:%d,y%d\ninput:%d,lastinput:%d\ngtime:%d,move:%d\n", \
+			head.x,head.y,tail.x,tail.y,gc,lastgc,gtime,move);
 
 #ifdef _WIN32
     #define clear system("cls");
